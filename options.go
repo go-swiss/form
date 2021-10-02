@@ -17,15 +17,16 @@ type Option struct {
 	HelpText string     `json:"help_text,omitempty"`
 	Kind     optionKind `json:"kind,omitempty"`
 
-	Default   string         `json:"default,omitempty"`
-	Required  bool           `json:"required,omitempty"`
-	Min       string         `json:"min,omitempty"`
-	Max       string         `json:"max,omitempty"`
-	MinLength int            `json:"min_length,omitempty"`
-	MaxLength int            `json:"max_length,omitempty"`
-	Pattern   string         `json:"pattern,omitempty"`
-	Options   []SelectOption `json:"options,omitempty"`
-	List      []string       `json:"list,omitempty"`
+	Default     string         `json:"default,omitempty"`
+	Required    bool           `json:"required,omitempty"`
+	Min         string         `json:"min,omitempty"`
+	Max         string         `json:"max,omitempty"`
+	MinLength   int            `json:"min_length,omitempty"`
+	MaxLength   int            `json:"max_length,omitempty"`
+	Pattern     string         `json:"pattern,omitempty"`
+	Options     []SelectOption `json:"options,omitempty"`
+	List        []string       `json:"list,omitempty"`
+	Placeholder string         `json:"placeholder,omitempty"`
 
 	// Used in templates
 	FormName  string `json:"-"`
