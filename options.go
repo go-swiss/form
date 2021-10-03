@@ -86,4 +86,5 @@ var OptionKinds = []optionKind{
 	"time",
 	"url",
 	"week",
+	"textarea",
 }
