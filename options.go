@@ -21,6 +21,7 @@ type Option struct {
 	Required    bool           `json:"required,omitempty"`
 	Min         string         `json:"min,omitempty"`
 	Max         string         `json:"max,omitempty"`
+	Step        string         `json:"step,omitempty"`
 	MinLength   int            `json:"min_length,omitempty"`
 	MaxLength   int            `json:"max_length,omitempty"`
 	Pattern     string         `json:"pattern,omitempty"`
