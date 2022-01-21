@@ -44,6 +44,12 @@ func (o Option) WithFormValue(val string) Option {
 	return o
 }
 
+// To be able to satisfy an interface in case
+// other custom options are needed
+func (o Option) GetOption() Option {
+	return o
+}
+
 type optionKind string
 
 func (o *optionKind) UnmarshalJSON(data []byte) (err error) {
