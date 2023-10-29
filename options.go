@@ -28,6 +28,7 @@ type Option struct {
 	Options     []SelectOption `json:"options,omitempty"`
 	List        []string       `json:"list,omitempty"`
 	Placeholder string         `json:"placeholder,omitempty"`
+	Title       string         `json:"title,omitempty"`
 
 	// Used in templates
 	FormName  string `json:"-"`
@@ -87,6 +88,7 @@ var OptionKinds = []optionKind{
 	"number",
 	"radio",
 	"range",
+	"search",
 	"select",
 	"tel",
 	"text",
