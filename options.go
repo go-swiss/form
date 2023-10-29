@@ -80,21 +80,30 @@ func MustKind(name string) optionKind {
 }
 
 var OptionKinds = []optionKind{
+	"button",
 	"checkbox",
 	"color",
 	"date",
 	"datetime-local",
 	"email",
+	"file",
+	"hidden",
+	"image",
 	"month",
 	"number",
+	"password",
 	"radio",
 	"range",
+	"reset",
 	"search",
-	"select",
+	"submit",
 	"tel",
 	"text",
 	"time",
 	"url",
 	"week",
+
+	// non-standard
+	"select",
 	"textarea",
 }
