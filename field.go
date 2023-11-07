@@ -1,8 +1,5 @@
-## Form
+package form
 
-This package provides a `Field` type which can be used to represent a field in HTML form making it easy to use forms in templates.
-
-```go
 // Field represents a form field
 // T is the type of "output" strings
 // The easy way to use this is to use string
@@ -32,4 +29,11 @@ type Field[T any] struct {
 	Name  string `json:"name,omitempty"`
 	Value string `json:"value,omitempty"`
 }
-```
+
+// SelectOption represents the <option> tag
+type SelectOption struct {
+	Label    string `json:"label"`
+	Value    string `json:"value"`
+	Selected bool   `json:"selected,omitempty"`
+	Disabled bool   `json:"disabled,omitempty"`
+}

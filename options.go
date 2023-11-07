@@ -6,11 +6,9 @@ import (
 	"strings"
 )
 
-type SelectOption struct {
-	Label string `json:"label"`
-	Value string `json:"value"`
-}
-
+// Option represents a form field
+//
+// Deprecated: Use [Field] instead
 type Option struct {
 	ID       string     `json:"id,omitempty"`
 	Label    string     `json:"label,omitempty"`

@@ -1,3 +1,3 @@
 module github.com/go-swiss/form
 
-go 1.16
+go 1.18
